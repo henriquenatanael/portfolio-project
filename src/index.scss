@@ -1,18 +1,8 @@
 * {
-  margin:0;
+  margin: 0;
   padding: 0;
   outline: 0;
-  box-sizing: border-box
-}
-
-body {
- background: #f0f0f5 no-repeat 70% top;
- -webkit-font-smoothing: antialiased;
- -moz-osx-font-smoothing: grayscale;
-}
-
-body, input, textarea, select, button {
-  font: 16px Roboto, sans-serif;
+  box-sizing: border-box;
 }
 
 :root {
@@ -27,6 +17,22 @@ body, input, textarea, select, button {
   --yellow-500: #eba417;
 }
 
+body {
+  background: #f0f0f5 no-repeat 70% top;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body,
+input,
+textarea,
+select,
+button {
+  font: 16px Roboto, sans-serif;
+  font-weight: 300;
+  color: var(--gray-850);
+}
+
 .content {
   max-width: 1120px;
   margin: 10px auto;
@@ -37,6 +43,16 @@ body, input, textarea, select, button {
   }
 }
 
+p {
+  line-height: 24px;
+}
+
+.highlight {
+  color: var(--yellow-500);
+  font-weight: 400;
+}
+
+
 @media (max-width: 1200px) {
   #nav {
     padding: 0 12px;
@@ -44,16 +60,13 @@ body, input, textarea, select, button {
 }
 
 button {
-  cursor: pointer
+  cursor: pointer;
 }
 
- 
- 
 a {
   color: inherit;
   text-decoration: none;
 }
-
 
 /* home */
 
@@ -68,7 +81,11 @@ a {
 
   flex: 1;
   justify-content: space-between;
-  
+
+  .contact {
+    font-weight: 300;
+  }
+
   img {
     width: 250px;
     height: 250px;
@@ -78,15 +95,10 @@ a {
     img {
       display: none;
     }
-
   }
-
 }
 
-
 .home-hero {
-  
-
   > span {
     font-size: 16px;
     font-weight: bold;
@@ -112,7 +124,6 @@ a {
       color: var(--cyan-500);
       font-weight: bold;
     }
-
   }
 
   a {
@@ -128,16 +139,14 @@ a {
     align-items: center;
     justify-content: center;
     font-weight: bold;
- 
-   transition: filter 0.2s;
- 
+
+    transition: filter 0.2s;
+
     &:hover {
       filter: brightness(0.8);
     }
   }
-
 }
-
 
 // https://www.shapedivider.app
 .custom-shape-divider-bottom-1620750232 {
@@ -159,5 +168,53 @@ a {
 }
 
 .custom-shape-divider-bottom-1620750232 .shape-fill {
-  fill: #FFFFFF;
+  fill: #ffffff;
+}
+
+// about
+.project{
+  margin-top: 40px;
+}
+
+.profile {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+
+  img {
+    width: 250px;
+    height: 250px;
+  }
+
+  h1, p {
+    margin-bottom: 10px;
+  }
+ 
+  .about {
+    margin: 0 22px;
+    flex: 1 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .skill {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  @media (max-width: 768px) {
+    .about {
+      margin: 0;
+    }
+    img {
+      display: none;
+    }
+  }
 }

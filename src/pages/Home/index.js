@@ -23,7 +23,7 @@ export const Home = () => {
           <h1>
             This is my <span>portfolio</span> web site.
           </h1>
-          <p>
+          <p className="contact">
             Feel free to contact me and get a quote
             <br />
           </p>

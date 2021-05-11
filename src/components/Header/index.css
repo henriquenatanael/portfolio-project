@@ -1,0 +1,52 @@
+.header-container {
+  height: 70px;
+  border-bottom: 1px solid #d6d6dd;
+}
+
+.header-content {
+  max-width: 1120px;
+  height: 70px;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+}
+
+.nav-header {
+  height: 70px;
+  margin: 0;
+}
+
+a.nav-link {
+  display: inline-block;
+  position: relative;
+  height: 70px;
+  line-height: 70px;
+  color: #57575c;
+}
+a.nav-link-blog {
+  display: inline-block;
+  position: relative;
+  height: 70px;
+  padding: 0 22px;
+  line-height: 70px;
+  color: #57575c;
+}
+a.nav-link-right {
+  display: inline-block;
+  position: relative;
+  padding: 0 12px;
+  height: 70px;
+  line-height: 70px;
+  color: #57575c;
+  margin-left: auto;
+}
+
+.active {
+  color: var(--white);
+  font-weight: bold;
+}
+
+button {
+  margin-left: auto;
+}

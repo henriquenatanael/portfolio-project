@@ -1,5 +1,4 @@
 import "./App.css";
-import { Header } from "./components/Header";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import { Home } from './pages/Home'
 import { Project } from './pages/Project'
@@ -9,7 +8,6 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <Header />
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/blog" component={Blog} /> 

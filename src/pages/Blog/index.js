@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import Input from '../../components/Input'
+import { Header } from "../../components/Header";
+import Input from "../../components/Input";
 const fixPosts = [
   {
     slug: "introducing-the-new-jsx-transform",
@@ -26,24 +26,23 @@ const fixPosts = [
       "Today, we are publishing the first Release Candidate for React 17. It has been two and a half years since the previous major release of React, which is a long time even by our standards! In this blog post, we will describe the role of this major release, what changes you can expect in it, and how you can try this release.",
     link: "https://reactjs.org/blog/2020/08/10/react-v17-rc.html",
   },
-]
+];
 
 export const Blog = () => {
   const [newBlog, setNewBlog] = useState(false);
-  const [slug, setSlug] = useState('');
-  const [title, setTitle] = useState('');
-  const [excerpt, setExcerpt] = useState('');
-  const [link, setLink] = useState('');
+  const [slug, setSlug] = useState("");
+  const [title, setTitle] = useState("");
+  const [excerpt, setExcerpt] = useState("");
+  const [link, setLink] = useState("");
   const [posts, setPost] = useState(() => {
-
-    const item = localStorage.getItem('@posts')
-    let post = []
+    const item = localStorage.getItem("@posts");
+    let post = [];
     if (item) {
-      post = JSON.parse(item)
-    } 
-    return [...post]
-  })
-  
+      post = JSON.parse(item);
+    }
+    return [...post];
+  });
+
   const saveBlog = () => {
     const newPost = {
       slug,
@@ -51,73 +50,93 @@ export const Blog = () => {
       title,
       excerpt,
       link,
-    }
-    const newposts = [...posts]
-    newposts.push(newPost)
-    setPost(newposts)
-    localStorage.setItem('@posts',JSON.stringify(newposts))
-    setNewBlog(false)
-  }
+    };
+    const newposts = [...posts];
+    newposts.push(newPost);
+    setPost(newposts);
+    localStorage.setItem("@posts", JSON.stringify(newposts));
+    setNewBlog(false);
+  };
 
   return (
-    <main className="content-post">
-      <h1 className="highlight">Latest from Blog</h1>
-      {/* {if(newBlog === false) {
+    <>
+      <Header />
+      <main className="content-post">
+        <h1 className="highlight">Latest from Blog</h1>
+        {/* {if(newBlog === false) {
 
       }} */}
-      {newBlog === false ? (
-        <div className="posts">
-          {[...fixPosts, ...posts].map((post) => (
-            <a
-              className="link"
-              target="_blank"
-              rel="noreferrer"
-              href={`${post.link}`}
-            >
-              <time>{post.updatedAt}</time>
-              <strong>{post.title}</strong>
-              <p>{post.excerpt}</p>
+        {newBlog === false ? (
+          <div className="posts">
+            {[...fixPosts, ...posts].map((post) => (
+              <a
+                key={post.slug}
+                className="link"
+                target="_blank"
+                rel="noreferrer"
+                href={`${post.link}`}
+              >
+                <time>{post.updatedAt}</time>
+                <strong>{post.title}</strong>
+                <p>{post.excerpt}</p>
+              </a>
+            ))}
+            <a className="new" onClick={() => setNewBlog(true)}>
+              New
             </a>
-          ))}
-          <Link className="new" onClick={() => setNewBlog(true)}>
-            New
-          </Link>
-        </div>
-      ) : (
-        <div className="posts">
-          <h1>New post</h1>
-          <div className="new-post">
-            <div>
-              <label>Slug</label>
-              <Input value={slug} onChange={e => setSlug(e.currentTarget.value)}type="text"/>
-            </div>
-            <div>
-              <label>Title</label>
-              <Input value={title} onChange={e => setTitle(e.currentTarget.value)} type="text"/>
-            </div>
-            <div>
-              <label>Excerpt</label>
-              <Input value={excerpt} onChange={e => setExcerpt(e.currentTarget.value)} type="text"/>
-            </div>
-            <div>
-              <label>Link</label>
-              <Input value={link} onChange={e => setLink(e.currentTarget.value)} type="url"/>
-            </div>
+          </div>
+        ) : (
+          <div className="posts">
+            <h1>New post</h1>
+            <div className="new-post">
+              <div>
+                <label>Slug</label>
+                <Input
+                  value={slug}
+                  onChange={(e) => setSlug(e.currentTarget.value)}
+                  type="text"
+                />
+              </div>
+              <div>
+                <label>Title</label>
+                <Input
+                  value={title}
+                  onChange={(e) => setTitle(e.currentTarget.value)}
+                  type="text"
+                />
+              </div>
+              <div>
+                <label>Excerpt</label>
+                <Input
+                  value={excerpt}
+                  onChange={(e) => setExcerpt(e.currentTarget.value)}
+                  type="text"
+                />
+              </div>
+              <div>
+                <label>Link</label>
+                <Input
+                  value={link}
+                  onChange={(e) => setLink(e.currentTarget.value)}
+                  type="url"
+                />
+              </div>
 
-            <div className="actions">
-              <button onClick={() => setNewBlog(false)}>Cancel</button>
-              <button onClick={() => saveBlog()}>Create</button>
-            </div>
+              <div className="actions">
+                <button onClick={() => setNewBlog(false)}>Cancel</button>
+                <button onClick={() => saveBlog()}>Create</button>
+              </div>
 
-            {/* slug: "introducing-zero-bundle-size-react-server-components",
+              {/* slug: "introducing-zero-bundle-size-react-server-components",
       updatedAt: "August 10, 2020",
       title: "React v17.0 Release Candidate: No New Features",
       excerpt:
         "Today, we are publishing the first Release Candidate for React 17. It has been two and a half years since the previous major release of React, which is a long time even by our standards! In this blog post, we will describe the role of this major release, what changes you can expect in it, and how you can try this release.",
     }, */}
+            </div>
           </div>
-        </div>
-      )}
-    </main>
+        )}
+      </main>
+    </>
   );
 };

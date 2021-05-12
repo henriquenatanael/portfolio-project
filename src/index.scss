@@ -376,7 +376,7 @@ a {
   .project-item {
     max-width: 200px;
     border: 1px solid var(--gray-500);
-    min-height: 450px;
+    min-height: 300px;
     display: flex;
     flex-direction: column;
     justify-items: inherit;
@@ -397,7 +397,7 @@ a {
 
     .description {
       display: flex;
-      align-items: center;
+      align-items: flex-start;
       justify-content: flex-start;
       padding: 2px 15px;
       text-justify: inter-word;

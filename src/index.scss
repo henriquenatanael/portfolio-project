@@ -351,7 +351,73 @@ a {
 
 
 // projects
+.content-projects-about {
 
+  max-width: 1120px;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: 1200px) {
+    padding: 0 12px;
+  }
+  flex: 1;
+  .projects {
+    margin-top: 20px;
+    min-height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .project-item {
+    max-width: 200px;
+    border: 1px solid var(--gray-500);
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-items: inherit;
+    justify-content: space-between;
+
+    a {
+      font-weight: bold;
+      color: var(--yellow-500);
+      width: 100%;
+      text-align: center;
+    }
+
+    & + div {
+      margin-left: 15px;
+    }
+    .title {
+      background-color: var(--gray-300);
+      color: var(--gray-900);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+      font-weight: 500;
+    }
+
+    .description {
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      padding: 2px 15px;
+      text-justify: inter-word;
+    }
+
+    .link{
+      background-color: var(--gray-100);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 5px;
+    }
+  }
+}
 .content-projects {
 
   max-width: 1120px;

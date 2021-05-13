@@ -1,10 +1,13 @@
 import React from "react";
+import { Header } from "../../components/Header";
+import { PortfolioItem } from "../../components/Portfolio";
 
 import Profile from "../../assets/henrique-natanael.jpg";
 
 export const About = () => {
   return (
     <>
+     <Header />
       <div className="content">
         <div className="profile">
           <img src={Profile} alt="profile" />
@@ -40,7 +43,9 @@ export const About = () => {
         </div>
       </div>
       <div className="content project">
-        <h2>Last Projects</h2>
+        <main className="content-projects-about">
+          <PortfolioItem />
+        </main>
       </div>
     </>
   );

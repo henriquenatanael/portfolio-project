@@ -14,8 +14,8 @@ export const Header = () => {
             Blog
           </Link>
         </nav>
-        <Link className="nav-link-right" to="/project">
-          Project
+        <Link className="nav-link-right" to="/portfolio">
+          Portfolio
         </Link>
       </div>
     </header>

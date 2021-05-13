@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Header } from "../../components/Header";
-export const Project = () => {
+export const Portfolio = () => {
   return (
     <>
       <Header />
@@ -52,11 +52,13 @@ export const Project = () => {
           <div className="project-item">
             <p className="title">Shopping List</p>
             <p className="description">
-              lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem
-              ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem
-              ipsumlorem ipsumlorem ipsumlorem ipsum
+              Shopping List is a the simplest way to save your shopping list.
+              You only need add your grocery items and you can order by column.
+              It was a very nice to print or send to you phone
             </p>
-            <p className="link">Visit</p>
+            <p className="link">
+              <Link to="/shopping-list">Visit</Link>
+            </p>
           </div>
         </div>
       </main>

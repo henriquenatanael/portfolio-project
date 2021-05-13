@@ -62,7 +62,7 @@ export const Blog = () => {
     <>
       <Header />
       <main className="content-post">
-        <h1 className="highlight">Latest from Blog</h1>
+        <h1 className="highlight">Latest from React</h1>
         {/* {if(newBlog === false) {
 
       }} */}

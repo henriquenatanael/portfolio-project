@@ -43,18 +43,21 @@ export const Portfolio = () => {
           <div className="project-item">
             <p className="title">Burger Builder</p>
             <p className="description">
-              lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem
-              ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem
-              ipsumlorem ipsumlorem ipsumlorem ipsum
+              Burger Builder is a project which you can build your own Burger
+              and send to someone else. 
+              Super easy to use.
+              You Must try it! I use some new components to test it and error controls
+              to ensure the app will not be broken
             </p>
-            <p className="link">Visit</p>
+            <p className="link"><Link to="/burger-king">Visit</Link></p>
           </div>
           <div className="project-item">
             <p className="title">Shopping List</p>
             <p className="description">
               Shopping List is a the simplest way to save your shopping list.
               You only need add your grocery items and you can order by column.
-              It was a very nice to print or send to you phone
+              It was a very nice to print or send to you phone and it stay save if you
+              reload the page
             </p>
             <p className="link">
               <Link to="/shopping-list">Visit</Link>

@@ -1,0 +1,66 @@
+
+.table-shopping {
+  width: 100%;
+   background: rgb(248, 243, 243);
+   text-align: center;
+}
+
+
+.table-shopping  {
+  border: 1px solid #dce3e8;
+  border-collapse: collapse;
+}
+.table-shopping > tbody tr {
+  height: 40px;
+  color: #3a3a3a
+
+}
+
+.table-shopping tr:nth-child(even) {
+  background-color: #eee;
+}
+
+.table-shopping tr:nth-child(odd) {
+  background-color: #fff;
+}
+
+.table-shopping tr.caption {
+  font-size: 16px;
+  color: #3a3a3a;
+  height: 40px;
+  line-height: 40px;
+  background: #dce3e8;
+  margin: 0 !important;
+  padding: 0;
+
+}
+
+
+.table-shopping tr.caption th:nth-child(4) {
+  font-size: 16px;
+  background: #07070799;
+
+
+}
+.table-shopping tr th:nth-child(1), .table-shopping tr th:nth-child(2),  .table-shopping tr th:nth-child(3)  {
+   cursor: pointer;
+}
+
+.table-shopping tbody tr td:nth-child(2)  {
+  text-align: left;
+}
+
+.table-shopping tbody tr td:nth-child(1) {
+  width: 100px;
+  color: rebeccapurple;
+}
+
+
+.table-shopping tbody tr td:nth-child(3), table tbody tr td:nth-child(4) {
+  width: 70px;
+}
+
+
+.table-shopping tbody tr td:nth-child(2)  {
+  padding-left: 20px;
+}

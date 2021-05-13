@@ -25,11 +25,10 @@ export const Portfolio = () => {
           <div className="project-item">
             <p className="title">Store</p>
             <p className="description">
-              lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem
-              ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem
-              ipsumlorem ipsumlorem ipsumlorem ipsum
+              This is a th ecoolest store to buy some shoes ever.
+              Enjoy it.
             </p>
-            <p className="link">Link</p>
+            <p className="link"><Link to="/store">Visit</Link></p>
           </div>
           <div className="project-item">
             <p className="title">GitHub Explorer</p>

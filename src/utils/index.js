@@ -28,3 +28,9 @@ export const orderList = (listShopping, order, column) => {
     }
   }
 };
+
+
+export const  { format: formatPrice }  = new Intl.NumberFormat('en', {
+  style: 'currency',
+  currency: 'CAD',
+});

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-// import { FiArrowUp, FiArrowDown } from "react-icons/fi";
+ import './table.css'
 import Form from "./components/Form";
 import Input from "./components/input";
 import Button from "./components/Button";
@@ -138,7 +138,7 @@ export class ShoppingList extends Component {
 
           <Button type="submit">Add to Shopping list</Button>
         </Form>
-        <table>
+        <table className="table-shopping">
           <thead>
             <tr className="caption">
               <th

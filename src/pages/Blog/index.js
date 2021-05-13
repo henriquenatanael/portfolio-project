@@ -81,9 +81,9 @@ export const Blog = () => {
                 <p>{post.excerpt}</p>
               </a>
             ))}
-            <a className="new" onClick={() => setNewBlog(true)}>
-              New
-            </a>
+              <p className="new"onClick={() => setNewBlog(true)}>
+                  New
+              </p>
           </div>
         ) : (
           <div className="posts">

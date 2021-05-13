@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./index.css";
+import "./index.scss";
 
 export const Header = () => {
   return (
@@ -13,7 +13,7 @@ export const Header = () => {
           <Link className="nav-link-blog" to="/blog">
             Blog
           </Link>
-          <Link className="nav-link" to="/about">
+          <Link className="nav-link-about" to="/about">
             About
           </Link>
         </nav>

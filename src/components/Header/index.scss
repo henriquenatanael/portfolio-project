@@ -32,6 +32,19 @@ a.nav-link-blog {
   line-height: 70px;
   color: #57575c;
 }
+
+a.nav-link-about {
+  display: inline-block;
+  position: relative;
+  height: 70px;
+  padding: 0 22px;
+  line-height: 70px;
+  color: #57575c;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
 a.nav-link-right {
   display: inline-block;
   position: relative;
@@ -40,6 +53,11 @@ a.nav-link-right {
   line-height: 70px;
   color: #57575c;
   margin-left: auto;
+  margin-right: 15px;
+
+  @media (max-width: 768px) {
+    margin-right: 25px;
+  }
 }
 
 .active {

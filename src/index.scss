@@ -89,9 +89,13 @@ a {
   img {
     width: 250px;
     height: 250px;
+    z-index: 1;
   }
 
   @media (max-width: 768px) {
+    .custom-shape-divider-bottom-1620750232 {
+      display: none;
+    }
     img {
       display: none;
     }
@@ -112,6 +116,30 @@ a {
 
     span {
       color: var(--cyan-500);
+    }
+  }
+
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 24px;
+      line-height: 24px;
+      font-weight: 900;
+      margin-top: 32px;
+
+      span {
+        color: var(--cyan-500);
+      }
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.25rem;
+      margin-top: 2.5rem;
+
+      span {
+        color: var(--cyan-500);
+        font-weight: bold;
+      }
     }
   }
 
@@ -230,6 +258,13 @@ a {
   h1 {
     margin-bottom: 30px;
   }
+
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 24px;
+    }
+    padding: 10px;
+  }
 }
 
 .posts {
@@ -310,7 +345,6 @@ a {
       margin-left: 2px;
     }
     input {
-     
       border-radius: 3px;
       border: 1px solid #ddd;
       padding: 8px;
@@ -321,8 +355,6 @@ a {
       flex-direction: row;
       align-items: center;
       justify-content: flex-end;
-
-     
 
       button {
         margin-left: 15px;
@@ -349,10 +381,8 @@ a {
   }
 }
 
-
 // projects
 .content-projects-about {
-
   max-width: 1120px;
   margin: 10px auto;
   display: flex;
@@ -388,9 +418,17 @@ a {
       text-align: center;
     }
 
+    margin-top: 15px;
     & + div {
       margin-left: 15px;
     }
+
+    @media (max-width: 768px) {
+      & + div {
+        margin-left: unset;
+      }
+    }
+
     .title {
       background-color: var(--gray-300);
       color: var(--gray-900);
@@ -409,7 +447,7 @@ a {
       text-justify: inter-word;
     }
 
-    .link{
+    .link {
       background-color: var(--gray-100);
       display: flex;
       align-items: center;
@@ -419,7 +457,6 @@ a {
   }
 }
 .content-projects {
-
   max-width: 1120px;
   margin: 10px auto;
   display: flex;
@@ -428,6 +465,8 @@ a {
   @media (max-width: 1200px) {
     padding: 0 12px;
   }
+
+
   flex: 1;
   .projects {
     margin-top: 20px;
@@ -458,6 +497,16 @@ a {
     & + div {
       margin-left: 15px;
     }
+
+    margin-top: 15px;
+
+
+
+  @media (max-width: 768px) {
+    & + div {
+      margin-left: unset;
+    }
+  }
     .title {
       background-color: var(--gray-300);
       color: var(--gray-900);
@@ -476,7 +525,7 @@ a {
       text-justify: inter-word;
     }
 
-    .link{
+    .link {
       background-color: var(--gray-100);
       display: flex;
       align-items: center;
@@ -484,10 +533,7 @@ a {
       padding: 5px;
     }
   }
-
-  
 }
-
 
 // shopping
 
@@ -501,7 +547,6 @@ a {
     padding: 0 12px;
   }
 }
-
 
 // burger-king
 
@@ -518,20 +563,20 @@ a {
   padding: 5px;
   margin: 0 5px;
   width: 80px;
-  border: 1px solid #AA6817;
+  border: 1px solid #aa6817;
   cursor: pointer;
   outline: none;
 }
 
 .BuildControl button:disabled {
-  background-color: #AC9980;
-  border: 1px solid #7E7365;
+  background-color: #ac9980;
+  border: 1px solid #7e7365;
   color: #ccc;
   cursor: default;
 }
 
 .BuildControl button:hover:disabled {
-  background-color: #AC9980;
+  background-color: #ac9980;
   color: #ccc;
   cursor: not-allowed;
 }
@@ -542,29 +587,31 @@ a {
   width: 80px;
 }
 
-.BuildControl .Less {  
-  background-color: #D39952;
+.BuildControl .Less {
+  background-color: #d39952;
   color: white;
 }
 
 .BuildControl .More {
-  background-color: #8F5E1E;
+  background-color: #8f5e1e;
   color: white;
 }
 
-.BuildControl .Less:hover, .BuildControl .Less:active {  
-  background-color: #DAA972;
+.BuildControl .Less:hover,
+.BuildControl .Less:active {
+  background-color: #daa972;
   color: white;
 }
 
-.BuildControl .More:hover,.BuildControl .More:active {
-  background-color: #99703F;
+.BuildControl .More:hover,
+.BuildControl .More:active {
+  background-color: #99703f;
   color: white;
 }
 
 .BuildControls {
   width: 100%;
-  background-color: #CF8F2E;
+  background-color: #cf8f2e;
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -573,9 +620,8 @@ a {
   padding: 10px 0;
 }
 
-
 .OrderButton {
-  background-color: #DAD735;
+  background-color: #dad735;
   outline: none;
   cursor: pointer;
   border: 1px solid #966909;
@@ -586,14 +632,15 @@ a {
   box-shadow: 2px 2px 2px #966909;
 }
 
-.OrderButton:hover, .OrderButton:active {
-  background-color: #A0DB41;
+.OrderButton:hover,
+.OrderButton:active {
+  background-color: #a0db41;
   border: 1px solid #966909;
   color: #966909;
 }
 
 .OrderButton:disabled {
-  background-color: #C7C6C6;
+  background-color: #c7c6c6;
   cursor: not-allowed;
   border: 1px solid #ccc;
   color: #888888;
@@ -605,21 +652,20 @@ a {
 
 @keyframes enable {
   0% {
-      transform: scale(1);
+    transform: scale(1);
   }
   60% {
-      transform: scale(1.1);
+    transform: scale(1.1);
   }
   100% {
-      transform: scale(1);
+    transform: scale(1);
   }
 }
-
 
 .BreadBottom {
   height: 13%;
   width: 80%;
-  background: linear-gradient(#F08E4A, #e27b36);
+  background: linear-gradient(#f08e4a, #e27b36);
   border-radius: 0 0 30px 30px;
   box-shadow: inset -15px 0 #c15711;
   margin: 2% auto;
@@ -729,7 +775,6 @@ a {
   margin: 2% auto;
 }
 
-
 .Burger {
   width: 100%;
   margin: auto;
@@ -743,24 +788,23 @@ a {
 
 @media (min-width: 1000px) and (min-height: 700px) {
   .Burger {
-      width: 700px;
-      height: 600px;
+    width: 700px;
+    height: 600px;
   }
 }
 
 @media (min-width: 500px) and (min-height: 401px) {
   .Burger {
-      width: 450px;
-      height: 400px;
+    width: 450px;
+    height: 400px;
   }
 }
 @media (min-width: 500px) and (min-height: 400px) {
   .Burger {
-      width: 350px;
-      height: 300px;
+    width: 350px;
+    height: 300px;
   }
 }
-
 
 .Logo-Burger {
   background-color: white;
@@ -772,9 +816,7 @@ a {
 
 .Logo-Burger img {
   height: 100%;
-
 }
-
 
 .NavigationItems {
   margin: 0;
@@ -788,11 +830,9 @@ a {
 
 @media (min-width: 500px) {
   .NavigationItems {
-      flex-flow: row;
+    flex-flow: row;
   }
 }
-
-
 
 .SideDrawer {
   position: fixed;
@@ -808,9 +848,9 @@ a {
   transition: transform 0.3s ease-out;
 }
 
-@media  (min-width: 500px) {
+@media (min-width: 500px) {
   .SideDrawer {
-      display: none;
+    display: none;
   }
 }
 
@@ -821,7 +861,6 @@ a {
 .Close {
   transform: translateX(-100%);
 }
- 
 
 .Toolbar {
   width: 100%;
@@ -829,13 +868,13 @@ a {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #703B09;
+  background-color: #703b09;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
   box-sizing: border-box;
-  z-index: 90;   
+  z-index: 90;
 }
 
 .Toolbar nav {
@@ -848,10 +887,9 @@ a {
 
 @media (max-width: 499px) {
   .DesktopOnly {
-      display: none;
+    display: none;
   }
 }
-
 
 .CheckoutSummary {
   text-align: center;
@@ -861,10 +899,9 @@ a {
 
 @media (min-width: 600px) {
   .CheckoutSummary {
-      width: 500px;
+    width: 500px;
   }
 }
-
 
 .Backdrop {
   width: 100%;
@@ -875,7 +912,6 @@ a {
   top: 0;
   background-color: rgba(0, 0, 0, 0.5);
 }
-
 
 // github
 
@@ -911,7 +947,6 @@ section.repository-list {
         font-size: 14;
         color: #444;
         margin-top: 8px;
-
       }
 
       a {

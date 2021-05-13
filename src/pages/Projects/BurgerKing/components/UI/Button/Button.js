@@ -3,7 +3,7 @@ import './Button.css';
 
 const button = (props) => (
     <button 
-        className={["Button"].join(' ')}
+        className="Button-Burger"
 onClick={props.clicked}>{props.children}</button>
 );
 

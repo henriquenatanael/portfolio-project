@@ -1,5 +1,5 @@
-.Button {
-    background-color: transparent;
+.Button-Burger {
+    background-color:  #5C9210;;
     border: none;
     color: white;
     outline: none;
@@ -10,9 +10,8 @@
     font-weight: bold;
 }
 
-.Button:first-of-type {
+.Button-Burger:first-of-type {
     margin-left: 0;
-    padding-left: 0;
 }
 
 .Success {

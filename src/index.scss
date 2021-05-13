@@ -762,7 +762,7 @@ table tbody tr td:nth-child(2)  {
 }
 
 
-.Logo {
+.Logo-Burger {
   background-color: white;
   padding: 8px;
   height: 100%;
@@ -770,7 +770,7 @@ table tbody tr td:nth-child(2)  {
   border-radius: 5px;
 }
 
-.Logo img {
+.Logo-Burger img {
   height: 100%;
 
 }
@@ -821,12 +821,7 @@ table tbody tr td:nth-child(2)  {
 .Close {
   transform: translateX(-100%);
 }
-
-.Logo {
-  height: 11%;
-  margin-bottom: 32px;
-}
-
+ 
 
 .Toolbar {
   width: 100%;

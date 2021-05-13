@@ -22,7 +22,7 @@ class OrderSummary extends Component {
             <>
                 <h3>Your Order</h3>
                 <p>A Yummy burger with the following ingredients:</p>
-                <ul>
+                <ul style={{listStyle:'none'}}>
                     {ingredientSummary}
                 </ul>
                 <p><strong>Total Price: {this.props.price.toFixed(2)}</strong></p>

@@ -7,7 +7,7 @@ import { About } from "./pages/About";
 import { ShoppingList } from "./pages/Projects/ShoppingList";
 
 import Layout from "./pages/Projects/BurgerKing/hoc/Layout/Layout";
-import BurgerBuilder from "./pages/Projects/BurgerKing/containers/BurgerBuilder";
+import BurgerBuilder from "./pages/Projects/BurgerKing/";
 import Checkout from "./pages/Projects/BurgerKing/containers/Checkout/Checkout";
 
 function App() {

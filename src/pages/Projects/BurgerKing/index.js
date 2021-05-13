@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import Burger from "../../components/Burger/Burger";
-import BuildControls from "../../components/Burger/BuildControls/BuildControls";
-import Modal from "../../components/UI/Modal/Modal";
-import OrderSummary from "../../components/Burger/OrderSummary/OrderSummary";
-import Spinner from "../../components/UI/Spinner/Spinner";
+import Burger from "./components/Burger/Burger";
+import BuildControls from "./components/Burger/BuildControls/BuildControls";
+import Modal from "./components/UI/Modal/Modal";
+import OrderSummary from "./components/Burger/OrderSummary/OrderSummary";
+import Spinner from "./components/UI/Spinner/Spinner";
 
 const INGREDIENT_PRICE = {
   salad: 0.5,
@@ -91,8 +91,8 @@ class BurgerBuilder extends Component {
   };
 
   purchaseContinueHandler = () => {
-    alert('You continue!');
-     
+    alert('Send your order to restaurant');
+    this.setState({ purchasing: false });
     
   };
 

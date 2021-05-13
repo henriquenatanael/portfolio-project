@@ -32,13 +32,12 @@ export const Portfolio = () => {
             <p className="link">Link</p>
           </div>
           <div className="project-item">
-            <p className="title">Finance</p>
+            <p className="title">GitHub Explorer</p>
             <p className="description">
-              lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem
-              ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem
-              ipsumlorem ipsumlorem ipsumlorem ipsum
+              This project just grab the repositories from Gibhub.com
+              You just need chose a username and press the button
             </p>
-            <p className="link">Link</p>
+            <p className="link"><Link to="/github-finder">Visit</Link></p>
           </div>
           <div className="project-item">
             <p className="title">Burger Builder</p>

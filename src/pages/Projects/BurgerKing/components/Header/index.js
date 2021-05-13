@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
-import classes from './Layout.css'
+import './Header.css'
 import Toolbar from '../../components/Navigation/Toolbar/Toolbar';
 import SideDrawer from '../../components/Navigation/SideDrawer/SideDrawer';
 
-class Layout extends Component {
+class Menu extends Component {
     state = {
         showSideDrawer: false
     }
@@ -25,7 +25,7 @@ class Layout extends Component {
                 <SideDrawer 
                     open={this.state.showSideDrawer} 
                     closed={this.sideDrawerClosedHandler}/>
-                <main className={classes.Content}>
+                <main className="Content">
                     {this.props.children}
                 </main>
             </>
@@ -34,4 +34,4 @@ class Layout extends Component {
     }
 }
 
-export default Layout;
+export default Menu;

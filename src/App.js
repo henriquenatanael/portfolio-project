@@ -5,10 +5,8 @@ import { Portfolio } from "./pages/Portfolio";
 import { Blog } from "./pages/Blog";
 import { About } from "./pages/About";
 import { ShoppingList } from "./pages/Projects/ShoppingList";
-
-import Layout from "./pages/Projects/BurgerKing/hoc/Layout/Layout";
-import BurgerBuilder from "./pages/Projects/BurgerKing/";
-import Checkout from "./pages/Projects/BurgerKing/containers/Checkout/Checkout";
+import { BurgerBuilder } from "./pages/Projects/BurgerKing/";
+import { GithubFinder } from "./pages/Projects/GithubFinder";
 
 function App() {
   return (
@@ -20,10 +18,8 @@ function App() {
           <Route path="/portfolio" component={Portfolio} />
           <Route path="/about" component={About} />
           <Route path="/shopping-list" component={ShoppingList} />
-          <Layout>
-            <Route path="/burger-king" component={BurgerBuilder} />
-          </Layout>
-          <Route path="/checkout" component={Checkout} />
+          <Route path="/burger-king" component={BurgerBuilder} />
+          <Route path="/github-finder" component={GithubFinder} />
         </Switch>
       </BrowserRouter>
     </>
